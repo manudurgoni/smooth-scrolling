@@ -14,7 +14,7 @@ export default class Smooth {
     this.prefix = prefix('transform');
     this.rAF = undefined;
 
-    this.extends = this.constructor.name !== 'Smooth';
+    this.extends = this.options.extends || false;
 
     this.vars = {
       direction: this.options.direction || 'vertical',
